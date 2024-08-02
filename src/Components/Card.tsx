@@ -10,7 +10,6 @@ import { useAppSelector } from '../hooks/redux';
 
 export const Card =({data}:any)=>{
   const navigate = useNavigate()
-  const dispatch = useDispatch()
 
    
    

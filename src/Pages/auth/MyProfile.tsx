@@ -3,7 +3,7 @@ import ava from "../../icon/user.png"
 import { useAppDispatch, useAppSelector } from "../../hooks/redux"
 import { signOutAccount } from "../../Store/servers/AuthServer"
 import { useNavigate } from "react-router-dom"
-import { MyCardList } from "./MyCardList"
+import { MyCardList } from "../../Components/MyCardList"
 export const MyProfile =()=> {
     const {email,img} = useAppSelector(state =>state.userReducer)
     const navigate = useNavigate()

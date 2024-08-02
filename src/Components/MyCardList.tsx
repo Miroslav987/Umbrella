@@ -1,9 +1,7 @@
 
-import "../../styles/CardList.scss"
-import { Card } from "../../Components/Card"
-import { useAppDispatch, useAppSelector } from "../../hooks/redux"
-import { useEffect } from "react"
-import { emit } from "process"
+import "../styles/CardList.scss"
+import { Card } from "./Card"
+import { useAppDispatch, useAppSelector } from "../hooks/redux"
 
 export const MyCardList = ({email}:any) =>{
     const {products} =useAppSelector(state => state.productsReducer)

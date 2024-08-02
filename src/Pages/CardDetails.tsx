@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux"
 import { DeleteProduct, GetOneProduct } from "../Store/servers/ProductServer"
 import { useAppSelector } from "../hooks/redux"
 import { LoadingProducts } from "../Store/slices/ProductsSlice"
-import { CardList } from "./CardList"
+import { CardList } from "../Components/CardList"
 export const CardDetails =()=>{
     const { id } =useParams()
     
@@ -42,10 +42,7 @@ export const CardDetails =()=>{
            setImg2(["0%","100"])
             setImg3(["100%","60"])
        }
-      };
       
-    function brightness(arg0: number): import("csstype").Property.Filter | undefined {
-        throw new Error("Function not implemented.")
     }
 
     return(

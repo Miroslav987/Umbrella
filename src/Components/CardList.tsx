@@ -1,11 +1,11 @@
 
 import "../styles/CardList.scss"
-import { Card } from "../Components/Card"
+import { Card } from "./Card"
 import { useAppDispatch, useAppSelector } from "../hooks/redux"
 import { useEffect } from "react"
 import  loading  from "../animation/loading.gif"
-import { Loading } from "../Components/Loading"
-import { SearchAdaptive } from "../Components/SearchAdaptive"
+import { Loading } from "./Loading"
+import { SearchAdaptive } from "./SearchAdaptive"
 
 export const CardList = () =>{
     const {products ,isLoading} =useAppSelector(state => state.productsReducer)
@@ -13,7 +13,6 @@ export const CardList = () =>{
     
     return(
             <> 
-            <SearchAdaptive/>
         <article className="list">
              {!isLoading && <Loading/>}
                 {isLoading && products.map((e)=>(
