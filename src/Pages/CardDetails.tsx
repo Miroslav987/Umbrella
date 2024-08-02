@@ -25,7 +25,7 @@ export const CardDetails =()=>{
     const [img2 ,setImg2] = useState(["0%","100"])
     const [img3 ,setImg3] = useState(["0%","100"])
     const arrNameImg =[product.nameImg1,product.nameImg2,product.nameImg3]
-    
+  
     const mainPhoto = (num:number) => {      
        if (num == 1) {
            setImg3(["0%","100"])
@@ -48,8 +48,8 @@ export const CardDetails =()=>{
     return(
         <>
         
-        <article className="card_det">
-            <section className="block_img" >
+        <article id={`det`}  className="card_det">
+            <section className="block_img" id="card_det"  >
                 <section className="main_img">
                     <img style={{width:img1[0]}} src={product.img1} alt="" />
                     <img style={{width:img2[0]}} src={product.img2} alt="" />

@@ -1,23 +1,28 @@
 
  
-import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { Link, NavLink, useNavigate, useParams } from "react-router-dom";
 import "../styles/Card.scss";
-import { DeleteProduct} from '../Store/servers/ProductServer';
-import { useDispatch } from 'react-redux';
-import { useEffect, useState } from 'react';
-import { useAppSelector } from '../hooks/redux';
+import { HashLink } from "react-router-hash-link";
 
-
+interface CardDetailsProps {
+  match: {
+    params: {
+      id: string;
+    };
+  };
+}
 export const Card =({data}:any)=>{
   const navigate = useNavigate()
 
-   
-   
-   
-    
     return(
         <>
-          <article onClick={()=>navigate(`/card/details/${data.id}`)}
+        <HashLink smooth  scroll={el => {
+            const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+            const yOffset = -150; 
+            window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+          }} to={`/card/details/${data.id}/#det`}>
+        <article
+        //  onClick={()=>navigate(`/card/details/${data.id}/#card_det`)}
           key={data.id} 
           className="card">
 
@@ -30,6 +35,7 @@ export const Card =({data}:any)=>{
           <button >Подробнее</button>
             {/* <button onClick={()=>DeleteProduct(data.id,dispatch)} >Удалить</button> */}
           </article>
+         </HashLink>
         </>
     )
 }
