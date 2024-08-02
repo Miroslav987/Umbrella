@@ -21,7 +21,7 @@ function App() {
        
   return (
   <>
-    <img className='fon' src={fon} alt="" />
+    {/* <img className='fon' src={fon} alt="" /> */}
     <Navbar/> 
       <main>
         <Mainrouter/>
