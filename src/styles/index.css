@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+
+}
+
+body {
+  background-color: #ffffff;
+  
+}
+
+/* .fon {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 120vh;
+  z-index: -10;
+  opacity: 0.5;
+} */

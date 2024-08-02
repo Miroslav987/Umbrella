@@ -1,0 +1,71 @@
+.my_profile {
+    width: 100%;
+    color: white;
+
+    .my_info {
+        width: auto;
+        margin: 40px;
+        padding: 40px;
+        background: #4f4f4f;
+        // background: url(https://catherineasquithgallery.com/uploads/posts/2023-02/thumbs/1676563781_catherineasquithgallery-com-p-besshovnii-fon-zelenii-3d-27.jpg);
+        background-size: 30%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px white;
+
+        .block_one {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                margin-top: 10px;
+            font-size: 1rem;
+            }
+    
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                margin-right: 10px;
+            }
+        }
+    
+        .block_two {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            button {
+                color: #4f4f4f;;
+                border: none;
+                border-radius: 10px;
+                margin-top: 5px;
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            button:hover {
+                cursor: pointer;
+                opacity: 0.5;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .my_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px auto;
+        h2 {
+            color: #4f4f4f;
+        }
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .add_edit_card {
+        width: 90%;
+    }
+}
