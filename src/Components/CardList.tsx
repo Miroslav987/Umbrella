@@ -6,6 +6,7 @@ import { useEffect } from "react"
 import  loading  from "../animation/loading.gif"
 import { Loading } from "./Loading"
 import { SearchAdaptive } from "./SearchAdaptive"
+import { NewCard } from "./NewCard"
 
 export const CardList = () =>{
     const {products ,isLoading} =useAppSelector(state => state.productsReducer)
@@ -17,7 +18,7 @@ export const CardList = () =>{
              {!isLoading && <Loading/>}
                 {isLoading && products.map((e)=>(
                     <>
-                        <Card data={e} />
+                        <NewCard data={e} />
                     </>
                 ))}
             </article>

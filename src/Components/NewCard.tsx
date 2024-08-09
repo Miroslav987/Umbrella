@@ -1,11 +1,9 @@
-
- 
 import { Link, NavLink, useNavigate, useParams } from "react-router-dom";
-import "../styles/Card.scss";
+import "../styles/NewCard.scss";
 import { HashLink } from "react-router-hash-link";
 
 
-export const Card =({data}:any)=>{
+export const NewCard =({data}:any)=>{
   const navigate = useNavigate()
 
     return(
@@ -18,15 +16,16 @@ export const Card =({data}:any)=>{
         <article
         //  onClick={()=>navigate(`/card/details/${data.id}/#card_det`)}
           key={data.id} 
-          className="card">
-
+          className="ncard">
+              <section className="img">
                <img src={data.img1} alt="" />
-                <article className="card_info">
+               </section>
+               <section className="card_info">
                     <p className="text_name">{data.name}</p>
-                    <p className="text_price">{data.price}$</p>
-                    <p className="text_description">{data.description}</p>
-                </article>
-          <button >Подробнее</button>
+                    <p className="text_price"><span>{data.price}</span> сом</p>
+                    {/* <p className="text_description">{data.description}</p> */}
+                <button >Посмотреть информацию подробнее</button>
+              </section>
             {/* <button onClick={()=>DeleteProduct(data.id,dispatch)} >Удалить</button> */}
           </article>
          </HashLink>

@@ -149,7 +149,7 @@ export const EditProduct = async (obj:any,objImg:any,dispatch:AppDispatch,naviga
         
         GetProduct(dispatch)
         localStorage.setItem("oldImg","")
-        navigate("/my_profile") 
+        navigate(`/card/details/${obj.id}/#det`) 
       } catch (error) {
         console.log("error",error);
       } 

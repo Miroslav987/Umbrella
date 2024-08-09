@@ -45,23 +45,28 @@
             display: flex;
 
             button {
-                font-size: 15px;
-                background-color: rgba(0, 0, 0, 0.701);
+                font-size: 15px;                
+                font-weight: 600;
+                background-color: rgb(255, 255, 255);
                 border-radius: 10px;
+                border: none;
                 padding: 10px;
                 width: 100%;
+                transition: 0.2s;
             }
             .btn_ed {
-                color: rgb(255 134 0);
-                border: 3px double rgb(255 134 0);
+                color: #ff8c00;
+                border: 3px solid #ff8c00;
+                text-shadow: 0px 0px 1px #ff8c00;
             }
             .btn_del {
-                color: #fb0a0a;
-                border: 3px double #fb0a0a;
+                color: #B52222;
+                border: 3px solid #B52222;
+                text-shadow: 0px 0px 1px #B52222;
             }
             button:hover {
-                opacity: 0.9;
-                background-color: black;
+                opacity: 0.6;
+                // background-color: rgb(132, 132, 132);
             }
         }
     }
@@ -75,7 +80,7 @@
         aside {
             text-overflow: clip;
             border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.701);
+            background-color: #3B555D;
             padding: 20px;
             word-spacing: 3px;
             letter-spacing: 0.2px;
@@ -90,12 +95,12 @@
         align-items: center;
         
         p { 
-            color: #4c4c4c;
+            color: #3B555D;
             font-size: 22px;
             padding: 10px;
             font-weight: 600;
             border-radius: 10px;
-            outline:  4px solid #4c4c4c;
+            outline:  4px solid #3B555D;
             
 
         }
