@@ -14,9 +14,7 @@ export const NewCard =({data}:any)=>{
             window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
           }} to={`/card/details/${data.id}/#det`}>
         <article
-        //  onClick={()=>navigate(`/card/details/${data.id}/#card_det`)}
-          key={data.id} 
-          className="ncard">
+           className='ncard'  >
               <section className="img">
                <img src={data.img1} alt="" />
                </section>

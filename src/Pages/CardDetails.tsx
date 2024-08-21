@@ -21,26 +21,19 @@ export const CardDetails =()=>{
         GetOneProduct(id,dispatch)
         dispatch(LoadingProducts(false))
     },[id])
-    const [img1 ,setImg1] = useState(["100%","60"])
-    const [img2 ,setImg2] = useState(["0%","100"])
-    const [img3 ,setImg3] = useState(["0%","100"])
+    const [imgs ,setImgs] = useState({"img1":["100%","60"],"img2":["0%","100"],"img3":["0%","100"]})
     const arrNameImg =[product.nameImg1,product.nameImg2,product.nameImg3]
   
     const mainPhoto = (num:number) => {      
        if (num == 1) {
-           setImg3(["0%","100"])
-           setImg2(["0%","100"])
-           setImg1(["100%","60"])
+           setImgs({"img1":["100%","60"],"img2":["0%","100"],"img3":["0%","100"]})
        }
        if (num == 2) {
-           setImg1(["0%","100"])
-           setImg3(["0%","100"])
-           setImg2(["100%","60"])
+           setImgs({"img1":["0%","100"],"img2":["100%","60"],"img3":["0%","100"]})
        }
        if (num == 3) {
-           setImg1(["0%","100"])
-           setImg2(["0%","100"])
-            setImg3(["100%","60"])
+        setImgs({"img1":["0%","100"],"img2":["0%","100"],"img3":["100%","60"]})
+
        }
       
     }
@@ -51,14 +44,20 @@ export const CardDetails =()=>{
         <article id={`det`}  className="card_det">
             <section className="block_img" id="card_det"  >
                 <section className="main_img">
-                    <img style={{width:img1[0]}} src={product.img1} alt="" />
-                    <img style={{width:img2[0]}} src={product.img2} alt="" />
-                    <img style={{width:img3[0]}} src={product.img3} alt="" />
+                    <img style={{width:imgs.img1[0]}} src={product.img1} alt="" />
+                    <img style={{width:imgs.img2[0]}} src={product.img2} alt="" />
+                    <img style={{width:imgs.img3[0]}} src={product.img3} alt="" />
                 </section>
                 <section className="scroll_img">
-                    <img style={{filter: `brightness(${img1[1]}%)`}}  onClick={()=>mainPhoto(1)} src={product.img1} alt="" />
-                    <img style={{filter: `brightness(${img2[1]}%)`}}  onClick={()=>mainPhoto(2)} src={product.img2} alt="" />
-                    <img style={{filter: `brightness(${img3[1]}%)`}}  onClick={()=>mainPhoto(3)} src={product.img3} alt="" /> 
+                    <section  onClick={()=>mainPhoto(1)} >
+                    <img style={{filter: `brightness(${imgs.img1[1]}%)`} }src={product.img1} alt="" />
+                    </section>
+                    <section style={{filter: `brightness(${imgs.img2[1]}%)`}} onClick={()=>mainPhoto(2)} >
+                    <img src={product.img2} alt="" />
+                    </section>
+                    <section style={{filter: `brightness(${imgs.img3[1]}%)`}} onClick={()=>mainPhoto(3)} >
+                    <img src={product.img3} alt="" />
+                    </section>
                 </section>
 
                 {product.user == email &&

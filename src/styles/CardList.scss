@@ -6,8 +6,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 5px; 
+}
 
-
+.center {
+    background-color: black;
 }
 
 @media screen and (max-width: 1200px) {

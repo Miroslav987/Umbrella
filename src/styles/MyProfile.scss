@@ -65,7 +65,10 @@
 }
 
 @media screen and (max-width: 500px) {
-    .add_edit_card {
-        width: 90%;
+    .my_profile {
+        .my_info {
+            width: 95% ;
+            margin: 40px auto ;
+        }
     }
 }

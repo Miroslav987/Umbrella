@@ -73,7 +73,7 @@ import { auth } from "../../Firebase/Config";
     onAuthStateChanged(auth,(user) => {
       if (user) {
         dispatch(setUser(user))
-        console.log(user);
+        // console.log(user);
         
       }else{
         console.error("пользователь не войден");

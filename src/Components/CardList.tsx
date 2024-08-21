@@ -7,20 +7,23 @@ import  loading  from "../animation/loading.gif"
 import { Loading } from "./Loading"
 import { SearchAdaptive } from "./SearchAdaptive"
 import { NewCard } from "./NewCard"
+import { CardLoad } from "./CardLoad"
 
 export const CardList = () =>{
     const {products ,isLoading} =useAppSelector(state => state.productsReducer)
 
+    console.log(products.length)
     
     return(
             <> 
-        <article className="list">
-             {!isLoading && <Loading/>}
+        <article key={3} className="list">
+
+             {!isLoading &&  <CardLoad/> }
+             
                 {isLoading && products.map((e)=>(
-                    <>
-                        <NewCard data={e} />
-                    </>
+                     <NewCard key={e.id}  data={e} />
                 ))}
+
             </article>
         </>
     )
