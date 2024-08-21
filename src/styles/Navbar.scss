@@ -16,10 +16,12 @@ header{
             font-size: 30px;
             padding: 3px;
             gap: 2px;
-            border-radius: 5px;}
+            border-radius: 5px;
+            
+        }
         .logo:hover {
             transition: 0.1s;
-            outline:3px double !important;
+            outline:3px double white;
         }
 
 

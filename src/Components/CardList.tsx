@@ -12,8 +12,6 @@ import { CardLoad } from "./CardLoad"
 export const CardList = () =>{
     const {products ,isLoading} =useAppSelector(state => state.productsReducer)
 
-    console.log(products.length)
-    
     return(
             <> 
         <article key={3} className="list">
@@ -21,7 +19,7 @@ export const CardList = () =>{
              {!isLoading &&  <CardLoad/> }
              
                 {isLoading && products.map((e)=>(
-                     <NewCard key={e.id}  data={e} />
+                     <NewCard key={e.id}  data={e} /> 
                 ))}
 
             </article>

@@ -20,10 +20,11 @@ export const CardDetails =()=>{
     useEffect(()=>{
         GetOneProduct(id,dispatch)
         dispatch(LoadingProducts(false))
+        setImgs({"img1":["100%","60"],"img2":["0%","100"],"img3":["0%","100"]})
     },[id])
     const [imgs ,setImgs] = useState({"img1":["100%","60"],"img2":["0%","100"],"img3":["0%","100"]})
     const arrNameImg =[product.nameImg1,product.nameImg2,product.nameImg3]
-  
+    
     const mainPhoto = (num:number) => {      
        if (num == 1) {
            setImgs({"img1":["100%","60"],"img2":["0%","100"],"img3":["0%","100"]})
@@ -78,7 +79,7 @@ export const CardDetails =()=>{
 
             </section>
             <section className="block_text">
-                <aside>
+                <aside className="descript_block">
                     {product.description}
                 </aside>
                     <section className="price_block">
