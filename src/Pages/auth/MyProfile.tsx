@@ -12,7 +12,7 @@ export const MyProfile =()=> {
     return(
     <>
         <article className="my_profile">
-            <section className="my_info">
+            <section className="my_info container">
                 <section className="block_one">
                 <img src={img? img :ava} alt="" />
                     <h2>{email}</h2>
@@ -28,7 +28,7 @@ export const MyProfile =()=> {
                 </section>
             </section>
 
-            <section className="my_card"> 
+            <section className="my_card container"> 
                 <h2>Мои товары</h2>
                 <MyCardList email={email}/>
             </section>

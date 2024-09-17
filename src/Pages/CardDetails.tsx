@@ -42,7 +42,7 @@ export const CardDetails =()=>{
     return(
         <>
         
-        <article id={`det`}  className="card_det">
+        <article id={`det`}  className="card_det container">
             <section className="block_img" id="card_det"  >
                 <section className="main_img">
                     <img style={{width:imgs.img1[0]}} src={product.img1} alt="" />

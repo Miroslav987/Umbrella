@@ -6,7 +6,6 @@ import { useEffect } from "react"
 import  loading  from "../animation/loading.gif"
 import { Loading } from "./Loading"
 import { SearchAdaptive } from "./SearchAdaptive"
-import { NewCard } from "./NewCard"
 import { CardLoad } from "./CardLoad"
 
 export const CardList = () =>{
@@ -19,7 +18,7 @@ export const CardList = () =>{
              {!isLoading &&  <CardLoad/> }
              
                 {isLoading && products.map((e)=>(
-                     <NewCard key={e.id}  data={e} /> 
+                     <Card key={e.id}  data={e} /> 
                 ))}
 
             </article>

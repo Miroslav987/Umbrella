@@ -1,12 +1,12 @@
 .my_profile {
+    margin-top: 140px;
     width: 100%;
     color: white;
 
     .my_info {
         width: auto;
-        margin: 40px;
         padding: 40px;
-        background: #3B555D;
+        background: #0e0f10;
         // background: url(https://catherineasquithgallery.com/uploads/posts/2023-02/thumbs/1676563781_catherineasquithgallery-com-p-besshovnii-fon-zelenii-3d-27.jpg);
         background-size: 30%;
         border-radius: 15px;
@@ -56,9 +56,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 100px auto;
+        .list {
+            margin-top: 40px;
+        }
         h2 {
-            color: #3B555D;
+            margin-top: 20px;
+            width: 100%;
+            color: #ffffff;
         }
     }
 

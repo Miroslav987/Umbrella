@@ -1,9 +1,18 @@
+:root {
+    --color-block:#0E0F10;
+}
+
 header{
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 85px;
     padding: 20px 30px;
-    background-color: #3B555D;
+    // box-shadow: 0px 0px 20px 18px var(--color-block);
+    background-color: var(--color-block);
     nav {
+        max-width: 1500px;
+        margin: auto;
         color: rgb(255, 255, 255);
         display: flex;
         justify-content: space-between;
@@ -26,6 +35,8 @@ header{
 
 
         .nav_inp {
+            margin: auto;
+            margin-left: 16%;
             padding: 10px;
             font-size: 18px;
             width: 40%;

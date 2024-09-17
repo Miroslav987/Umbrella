@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 250px;
-    color: rgb(0, 0, 0);
+    width: 320px;
+    color: rgb(255, 255, 255);
     // height: 350px;
-    border-radius: 15px;
-    border-radius: 0px 15px 0px 15px;
-    background: #b5b5b500;
+    border-radius: 10px;
+    // box-shadow: 6px 5px 10px -6px white;
+    background: #08071a;
     transition: 0.5s;
 
     .img_loading {
@@ -20,14 +20,17 @@
 
     img {
         width: 100%;
-        height: 200px;
+        height: 230px;
         object-fit: cover;
-        border-radius: 15px 15px 0px 0px;
-        border-radius: 0px 15px 0px 15px
+        // border-radius: 10px 10px 0px 0px;
+        border-radius: 10px;
 
     }
 
     .card_info {
+        background: radial-gradient(circle, rgba(255,0,108,1) 0%, rgba(78,32,215,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         padding: 10px;
         p {  
             padding-bottom: 10px;
@@ -44,9 +47,10 @@
             letter-spacing: 0px;
         }
         .text_description {
-            height: 54px;
+            height: 60px;
             font-weight: 100;
             font-size: 15px;
+            line-height: 20px;
             overflow: hidden;
             display: -webkit-box;
             -webkit-box-orient: vertical;
@@ -59,14 +63,18 @@
         width: 90%;
         font-size: 15px;
         font-weight: 600;
-        color: rgb(0, 0, 0) !important;
+        color: rgb(255, 255, 255) !important;
         padding: 10px;
         display: flex;
         justify-content: center;
         margin: 0 auto;
         margin-bottom: 20px;
         background: #00000000;
-        border: none;
+        background: radial-gradient(circle, rgba(255,0,108,1) 0%, rgba(78,32,215,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-radius: 10px;
+        border: 1px solid rgba(78,32,215,1) ;
         transition: 1s;
 
     }
@@ -74,8 +82,9 @@
 }
 
 .card:hover {
-    background: #d7d7d7;
-    transition: 0.4s;
+    // background: #3B555D;
+
+    // transition: 0.4s;
 }
 
 @media screen and (max-width: 550px) {

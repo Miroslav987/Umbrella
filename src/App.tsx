@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import fon from "./img/fon2.jpeg"
+import fon from "./img/fon3.jpg"
 import { Navbar } from './Components/Navbar';
 import { Footer } from './Components/Footer';
 import Mainrouter from './Mainrouter';
@@ -21,7 +21,8 @@ function App() {
        
   return (
   <>
-    {/* <img className='fon' src={fon} alt="" /> */}
+    <img className='fon' src={fon} alt="" />
+
     <Navbar/> 
       <main>
         <Mainrouter/>

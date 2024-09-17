@@ -23,10 +23,10 @@ export const Card =({data}:any)=>{
                <img src={data.img1} alt="" />
                 <article className="card_info">
                     <p className="text_name">{data.name}</p>
-                    <p className="text_price">{data.price}$</p>
+                    {/* <p className="text_price">{data.price}сом</p> */}
                     <p className="text_description">{data.description}</p>
                 </article>
-          <button >Подробнее</button>
+          <button ><p className="text_price">{data.price}сом</p></button>
             {/* <button onClick={()=>DeleteProduct(data.id,dispatch)} >Удалить</button> */}
           </article>
          </HashLink>

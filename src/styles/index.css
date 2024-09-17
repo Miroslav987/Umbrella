@@ -13,22 +13,26 @@ a{
 
 body {
   background-color: #ffffff;
-  
+
 }
-#root {
+/* #root {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+} */
+
+.container {
+  max-width: 1500px;
+  margin: auto;
 }
 
-/* .fon {
-  display: none;
+.fon {
   position: fixed;
   top: 0;
   bottom: 0;
   width: 100vw;
   height: 120vh;
   z-index: -10;
-  opacity: 0.5;
-} */
+  filter: blur(10px);
+}
