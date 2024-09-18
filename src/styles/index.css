@@ -35,4 +35,5 @@ body {
   height: 120vh;
   z-index: -10;
   filter: blur(10px);
+  object-fit: cover;
 }
