@@ -25,7 +25,7 @@ export const SignUp =()=> {
     }
     return(
         <>
-        <section className="auth" >
+        <section className="auth container" >
             <h2>Зарегистрироваться</h2>
             <form >
                 <input 

@@ -22,7 +22,7 @@ export const SignIn =()=> {
 }
     return(
         <>
-        <section className="auth" >
+        <section className="auth container" >
             <h2>Войти</h2>
             <form >
             <input 

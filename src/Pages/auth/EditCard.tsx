@@ -84,7 +84,7 @@ export const EditCard =()=> {
     return(
     <>
     
-    <article className="add_edit_card">
+    <article className="add_edit_card container">
             <h2>Изменить товар</h2>
     {!isLoading  &&  <Loading/>}
     {isLoading && 
