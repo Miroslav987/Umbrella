@@ -23,7 +23,7 @@ export const Navbar=()=> {
                 <NavLink to={"/"}><h2 className="logo">UMB<div className="nav_logo"></div>RELLA</h2></NavLink>
                 <input className="nav_inp" type="search" value={search} onChange={(e)=>setSearch(e.target.value)} />
                 {!email?
-                 <div ><NavLink to={"/sign_in"}>Войти / </NavLink><NavLink to={"sign_up"}>Зарегистрироваться</NavLink></div>
+                 <div className="block_auth"><NavLink to={"/sign_in"}>Войти / </NavLink><NavLink to={"sign_up"}>Зарегистрироваться</NavLink></div>
                  :
                  <>
                  <NavLink to={"/my_profile"}>
